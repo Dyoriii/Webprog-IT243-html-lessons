@@ -1,11 +1,23 @@
 body {
-  background-color: lightblue;
+  background-color: #09479d;
+  margin-left: 5px;
 }
+
 h1 {
-  color: navy;
+  color: #250000;
   margin-left: 20px;
 }
-.center {
+
+h2 {
+  color: #464040;
+}
+
+div {
+  background-color: #FFF9F9;
+  padding: 10px;
+}
+
+.center{
   text-align: center;
-  color: red;
+  color: #5F5146
 }
