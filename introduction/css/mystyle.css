@@ -1,6 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #09479d;
-  margin-left: 5px;
+  background-color: #173259;
+  padding: 0 5px;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -17,7 +24,7 @@ div {
   padding: 10px;
 }
 
-.center{
+.center {
   text-align: center;
-  color: #5F5146
+  color: #5F5146;
 }
