@@ -1,52 +1,100 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
-<title>WEBPROG IT243  Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iamvain</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- 
-<h1 class="center">Personal Profile Web page </h1>
-<p>
 
-About me<br>
-Jhorie Ranario<br>
-Education / Achievements<br>
- Graduate of Ramon Magsaysay (Cubao) Highschool with Honors
-Course: <br>
- BSIT
-IT Experience<br>
- Designing UI/UX
-Hobbies & Interests<br>
- onlines games, playing drums, dancing, sleeping
-Goals In Life / Dream<br>
- To be a financial stable person who can afford all his needs and wants
-Picture Gallery<br>
- <img src="https://i.pinimg.com/474x/81/2a/42/812a42b35dbc006f5ae51231f97205e8.jpg" alt="Venom spider man" width="300" height="400">
-</p>
- 
-<div class="container-fluid mt-3">
-<h1>Responsive Auto Layout Columns</h1>
-<p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
-<p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
-<div class="container-fluid">
-<div class="row">
-<div class="col-md bg-primary text-white">1 of 2</div>
-<div class="col-md bg-dark text-white">2 of 2</div>
-</div>  
-</div>
-<br>
-<div class="container-fluid">
-<div class="row">
-<div class="col-md bg-primary text-white">1 of 4</div>
-<div class="col-md bg-dark text-white">2 of 4</div>
-<div class="col-md bg-primary text-white">3 of 4</div>
-<div class="col-md bg-dark text-white">4 of 4</div>
-</div>  
-</div>
+<div class="container">
+
+  <!-- LEFT: PROFILE -->
+  <div class="profile">
+    <h1>My Profile</h1>
+
+    <div class="profile-img">
+      <img src="https://i.pinimg.com/736x/c0/8f/0c/c08f0cfd48cfc651d61daec38e8c74ea.jpg" alt="Profile Image">
+    </div>
+
+    <h2>Jhorie M. Ranario</h2>
+    <p><a href="#">This is pics</a></p>
+
+    <div class="separator-container">
+      <img src="https://i.pinimg.com/1200x/2f/3e/f0/2f3ef0eaa0a87a8e291f62e28c8a89d7.jpg" alt="separator" class="separator">
+    </div>
+
+    <h3>About Me</h3>
+    <blockquote>
+      "I carry my past, but I don't live there"
+      <br>
+    </blockquote>
+  </div>
+
+  <!-- CENTER: DETAILS -->
+  <div class="details">
+
+    <section>
+      <h3>Education / Achievement</h3>
+      <p>San Diego Elementary School - Grade 1-6</p>
+      <p>Ramon Magsaysay (Cubao) High School - Grade 7-12</p>
+      <p>Asia Pacific College - Current</p>
+    </section>
+
+    <section>
+      <h3>Course</h3>
+      <p>BSIT</p>
+    </section>
+
+    <section>
+      <h3>IT Experience</h3>
+      <p>Packet Tracer, Outsystems, MS Apps, Java Programming, Python</p>
+    </section>
+
+    <div class="likes-hobbies">
+      <div class="likes">
+        <h4>Likes</h4>
+        <ul class="triangle-list">
+          <li>Eminence and Black Colors</li>
+          <li>Likes to read Windbreaker</li>
+        </ul>
+      </div>
+
+      <div class="hobbies">
+        <h4>Hobbies</h4>
+        <ul class="triangle-list">
+          <li>Playing Instrument</li>
+          <li>Playing Games</li>
+          <li>Sleeping</li>
+          <li>Cleaning</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="goals">
+      <strong>Goals:</strong> To graduate and fulfill my dreams which is to Travel.
+    </div>
+
+  </div>
+
+  <!-- RIGHT: MUSIC PLAYER -->
+  <div class="music">
+    <h3>Now Playing</h3>
+    <div class="music-img">
+      <img src="https://i.pinimg.com/736x/e2/a7/c4/e2a7c44b9f1712d80daa92fd5b5e78c9.jpg" alt="Sassy Scene">
+    </div>
+    <div class="center-align">
+      <p class="song-title">Faster N Harder (Instrumental)</p>
+      <p class="artist">6arelyhuman</p>
+    </div>
+
+    <audio controls autoplay loop>
+      <source src="Sassy Scene - Faster n Harder (Instrumental).mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+  </div>
+
 </div>
 
 </body>
